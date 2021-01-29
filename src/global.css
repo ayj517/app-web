@@ -1,0 +1,74 @@
+/* RESET*/
+/*stylelint-disable*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  code,
+  address,
+  caption,
+  cite,
+  code,
+  em,
+  strong,
+  th,
+  figcaption {
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  fieldset,
+  iframe {
+    border: none;
+  }
+  
+  caption,
+  th {
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  article,
+  aside,
+  footer,
+  header,
+  hgroup,
+  nav,
+  section,
+  figure,
+  figcaption {
+    display: block;
+  }
+  
+body {
+font: 14px Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei",
+    SimSun, Heiti, sans-serif;
+-webkit-overflow-scrolling: touch;
+color: #6a7391;
+background: #f8f9fb;
+}
+ul {
+list-style: none;
+}
+a {
+text-decoration: none;
+}
+.content{
+    width: 1043px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #ddd;
+    background: #fff;
+    border-radius: 5px;
+}

@@ -1,0 +1,80 @@
+.game-box{
+   .game-title{
+       height: 56px;
+       padding: 10px;
+       display: flex;
+       justify-content: space-between;
+       font-size: 14px;
+       align-items: center;
+       color: #666666;
+       border-bottom: 1px solid #e8e8e8;
+       .title{
+           font-size:18px;
+       }
+   } 
+   .game-list{
+       padding: 10px 0;
+       display: flex;
+       flex-wrap:wrap;
+       li{
+           position: relative;
+           display: flex;
+           padding: 10px 0px;
+           align-items: center;
+           width: 260px;
+           transition: all 0.3s;
+           background-color: #fff;
+           cursor: pointer;
+           &:hover{
+            background: #f5f7fa
+           }
+           .game-logo{
+               width: 95px;
+               height: 75px;
+               text-align: center;
+               img{
+                   width: 75px;
+                   height: 75px;
+               }
+           }
+           .game-detail{
+               width: 165px;
+               h4{
+                text-decoration: none;
+                color: #666;
+                display: block;
+                height: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+               }
+               .stars{
+                    margin: 5px 0;
+                    background: url(./img/star.png) repeat-x;
+                    height: 15px;
+                    width: 75px;
+                    clear: both;
+                    span {
+                        display: block;
+                        background: url(./img/stars2.png) repeat-x;
+                        height: 15px;
+                        width: 75px;
+                        width: 80%;
+                    }
+               }
+               .date{
+                    color: #666;
+                    overflow: hidden;
+                    line-height: 22px;
+                    font-size: 13px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+               }
+           }
+       }
+   }
+}
