@@ -6,7 +6,7 @@ export default defineConfig({
   },
   routes: [
     { path: '/', component: '@/pages/index' },
-    { path: '/admin', component: '@/pages/admin' },
+    { path: '/game', component: '@/pages/game' },
 
   ],
   sass: { },
