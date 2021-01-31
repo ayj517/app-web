@@ -1,0 +1,48 @@
+.left-nav{
+    width: 300px;
+    background-color: #fff;
+    h4{
+        height: 55px;
+        line-height: 55px;
+        color: #fff;
+        background-color: #0f2a47;
+        padding: 0 10px;
+    }
+    .menu-ist{
+        .menu-title{
+            height: 40px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            background-color: #fafafa;
+            padding: 0 10px;
+            color: #616161;
+            i{
+                width: 40px;
+                height: 40px;
+            }
+            .icon-game{
+                background: url('~@/static/img/gameicon.png') no-repeat center;
+            }
+            .icon-app{
+                background: url('~@/static/img/appicon.png') no-repeat center;
+            }
+            .icon-new{
+                background: url('~@/static/img/newicon.png') no-repeat center;
+            }
+        }
+        .menu-list{
+            padding: 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                cursor: pointer;
+                padding: 5px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 50%;
+            }
+        }
+    }
+}

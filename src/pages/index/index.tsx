@@ -1,17 +1,19 @@
+import React, { memo } from 'react';
 
-import React, { memo } from 'react'
+import GameList from '@/components/gameList/Index';
+import TopNav from '@/components/topNav/index';
+import Search from '@/components/search/index';
 
-import GameList from "@/components/gameList/Index";
-import TopNav from "@/components/topNav/index";
 import styles from './index.scss';
 
-const IndexPage = () =>{
-  return(
+const IndexPage = () => {
+  return (
     <>
-      <TopNav/>
+      <TopNav />
+      <Search />
       <GameList></GameList>
     </>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

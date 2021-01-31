@@ -1,0 +1,13 @@
+.stars{
+    background: url(./img/star.png) repeat-x;
+    height: 15px;
+    width: 75px;
+    clear: both;
+    span {
+        display: block;
+        background: url(./img/stars2.png) repeat-x;
+        height: 15px;
+        width: 75px;
+        width: 80%;
+    }
+}

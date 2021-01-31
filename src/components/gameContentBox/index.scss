@@ -1,0 +1,57 @@
+.game-content{
+    width: 728px;
+    background-color: #fff;
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:20px 10px;
+        .slot{
+            display: flex;
+            align-items: center;
+            .name{
+                padding-right: 10px;
+            }
+            ul{
+                display: flex;
+                li{
+                    height: 25px;
+                    cursor: pointer;
+                    line-height: 25px;
+                    padding: 0 10px;
+                    border-right: 1px solid #ccc;
+                    &:last-child{
+                        border:0
+                    }
+                }
+            }
+        }
+    }
+    .game-lists{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: 170px;
+            height: 210px;
+            text-align: center;
+            margin: 6px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            .stars-box{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 5px;
+            }
+            .game-img{
+                margin-bottom: 5px;
+            }
+            .game-name{
+                margin-bottom: 5px;
+            }
+            .dow-btn{
+                color: #102a47;
+            }
+        }
+    }
+    
+}
