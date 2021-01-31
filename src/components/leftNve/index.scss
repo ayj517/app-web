@@ -1,12 +1,14 @@
 .left-nav{
     width: 300px;
     background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.15);
     h4{
         height: 55px;
         line-height: 55px;
         color: #fff;
         background-color: #0f2a47;
         padding: 0 10px;
+        margin: 0;
     }
     .menu-ist{
         .menu-title{
@@ -42,6 +44,19 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 width: 50%;
+               
+                a{
+                    color: #666;
+                    &:hover{
+                        color: #1890ff;
+                    }
+                    
+                }
+                &.cur{
+                    a{
+                        color: #1890ff;
+                    }
+                }
             }
         }
     }

@@ -1,11 +1,14 @@
 .game-content{
     width: 728px;
     background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.15);
     .title{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:20px 10px;
+        padding: 20px 10px 0;
+        border-bottom: 1px solid #e8e8e8;
+        margin-bottom: 10px;
         .slot{
             display: flex;
             align-items: center;
@@ -47,11 +50,34 @@
             }
             .game-name{
                 margin-bottom: 5px;
+                margin-bottom: 5px;
+                display: inline-block;
+                width: 90%;
+                font-size: 13px;
+                text-align: center;
+                color: #666;
+                font-weight: 600;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                
             }
             .dow-btn{
                 color: #102a47;
             }
         }
+    }
+    .more{
+        display: block;
+        background: #fff;
+        color: #777;
+        text-decoration: none;
+        width: 200px;
+        margin: 0 auto 20px auto;
+        text-align: center;
+        font-size: 16px;
+        padding: 8px 0;
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,0.15);
     }
     
 }

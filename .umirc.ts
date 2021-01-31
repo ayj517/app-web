@@ -4,10 +4,20 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  links: [{ rel: 'icon', href: '@/static/favico.png' }],
   routes: [
-    { path: '/', component: '@/pages/index' },
-    { path: '/game', component: '@/pages/game' },
-    { path: '/app/:page', component: '@/pages/application/[page]' },
+    // @/pages/index
+    { exact: true, path: '/', component: '@/pages/index' },
+    {
+      exact: true,
+      path: '/gameDetail/:code',
+      component: '@/pages/gameDetail/[code]',
+    },
+    {
+      exact: true,
+      path: '/games/:appName/:page',
+      component: '@/pages/[appName]/[page]',
+    },
   ],
   proxy: {
     '/api': {
@@ -15,6 +25,11 @@ export default defineConfig({
       pathRewrite: { '^/api': '' },
       changeOrigin: true,
       secure: false,
+      treeShaking: true,
+      exportStatic: {},
+      targets: {
+        ie: 11,
+      },
       headers: {
         Connection: 'keep-alive',
       },

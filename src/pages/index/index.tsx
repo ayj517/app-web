@@ -7,13 +7,10 @@ import Search from '@/components/search/index';
 import styles from './index.scss';
 
 const IndexPage = () => {
-  return (
-    <>
-      <TopNav />
+  window.location.href = `${window.location.origin}/games/game_action/1`;
+  return <>{/* <TopNav />
       <Search />
-      <GameList></GameList>
-    </>
-  );
+      <GameList></GameList> */}</>;
 };
 
 export default IndexPage;
