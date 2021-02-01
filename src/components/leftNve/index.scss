@@ -9,6 +9,7 @@
         background-color: #0f2a47;
         padding: 0 10px;
         margin: 0;
+        font-size: 18px;
     }
     .menu-ist{
         .menu-title{
@@ -34,23 +35,27 @@
             }
         }
         .menu-list{
-            padding: 10px 20px;
+            padding: 10px 0px;
             display: flex;
             flex-wrap: wrap;
             li{
                 cursor: pointer;
-                padding: 5px 0;
+                padding: 8px 0;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 width: 50%;
-               
-                a{
-                    color: #666;
-                    &:hover{
+                padding-left: 20px;
+                transition: all 0.3s;
+                &:hover{
+                    background-color: #f5f7fa;
+                    border-left: 4px solid #0f2a47;
+                    a{
                         color: #1890ff;
                     }
-                    
+                }
+                a{
+                    color: #666;
                 }
                 &.cur{
                     a{

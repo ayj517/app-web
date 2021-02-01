@@ -25,7 +25,7 @@ const GameDetail = (props: any) => {
             </div>
             <div className="details-sdk">{detail.detail_sdk}</div>
             <div className="star">
-              <Stars />
+              <Stars width={detail.detail_score}/>
               {detail.detail_score}
             </div>
             <div className="dow-btn">
@@ -55,7 +55,6 @@ const GameDetail = (props: any) => {
   );
 };
 GameDetail.getInitialProps = (async (ctx) => {
-  console.log('000000000000');
   const { code } = ctx.match.params;
   const _data = {
     id: code,

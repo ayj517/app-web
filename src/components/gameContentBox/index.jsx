@@ -50,8 +50,7 @@ const GameContent = (props) => {
               </div>
               <p className="game-name">{item.apk_name}</p>
               <div className="stars-box">
-                {item.detail_score}
-                <Stars />
+                <Stars width={item.detail_score}/> {item.detail_score}
               </div>
               <div className="dow-btn">下载apk</div>
             </li>

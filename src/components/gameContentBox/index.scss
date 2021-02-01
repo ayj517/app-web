@@ -6,9 +6,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 10px 0;
+        padding: 0px 10px 0;
         border-bottom: 1px solid #e8e8e8;
         margin-bottom: 10px;
+        background: #fbfbfb;
+        border-bottom: 1px solid #e8e8e8;
+        color: #666;
+        font-size: 18px;
+        h3{
+            margin: 0;
+            padding: 10px 0;
+        }
         .slot{
             display: flex;
             align-items: center;
@@ -40,10 +48,15 @@
             margin: 6px;
             margin-bottom: 10px;
             cursor: pointer;
+            transition: all 0.3s;
+            &:hover{
+                background: #f5f7fa;
+            }
             .stars-box{
                 display: flex;
                 justify-content: center;
                 margin-bottom: 5px;
+                align-items: center;
             }
             .game-img{
                 margin-bottom: 5px;
@@ -63,17 +76,19 @@
                 
             }
             .dow-btn{
-                color: #102a47;
+                color: #00A6ED;
             }
         }
     }
     .more{
         display: block;
+        cursor: pointer;
         background: #fff;
         color: #777;
         text-decoration: none;
         width: 200px;
         margin: 0 auto 20px auto;
+        margin-top: 20px;
         text-align: center;
         font-size: 16px;
         padding: 8px 0;
