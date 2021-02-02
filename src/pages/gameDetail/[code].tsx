@@ -9,6 +9,12 @@ import { IGetInitialProps } from 'umi';
 const GameDetail = (props: any) => {
   console.log('GameDetail', 111);
   const { detail } = props.data;
+
+  const togo =(item)=>{
+    let win;                                        
+    win = window.open( 'about:blank','');          
+    win.document.write('<script type="text/javascript" >window.location.href="'+item+'" <\/script>');          
+  }
   // console.log(detail)
   return (
     <>
@@ -28,11 +34,14 @@ const GameDetail = (props: any) => {
               <Stars width={detail.detail_score}/>
               {detail.detail_score}
             </div>
+            {detail.download_url} 
             <div className="dow-btn">
-              <a target="_blank" href={detail.download_url}>
+              <a target="_blank" onClick={()=>togo(detail.download_url)} >
+              {/* href={detail.download_url} */}
                 下载 XAPK
               </a>
             </div>
+            <div></div>
           </div>
         </div>
         <div className="game-imgs">
